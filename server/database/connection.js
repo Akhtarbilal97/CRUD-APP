@@ -4,7 +4,7 @@ mongoose.set("strictQuery", true);
 const connectDB = async()=>{
     try{
 // mongodb connection string
-const con = await mongoose.connect("mongodb+srv://admin:admin123@cluster0.n3msbjp.mongodb.net/users?retryWrites=true&w=majority  ",process.env.MONGO_URI,{
+const con = await mongoose.connect('mongodb://127.0.0.1:27017/crud',process.env.MONGO_URI,{
     useNewUrlParser:true,
     useUnifiedTopology:true,
     useFindAndModify:false,
