@@ -3,24 +3,18 @@ const server = require('http').createServer();
 const path = require ("path");
 const dotenv = require("dotenv");
 const morgan = require("morgan");
-// const bodyParser = require("body-parser");
-
-// const connectDB = require('./server/database/connection');
+const bodyParser = require("body-parser");
+const connectDB = require('./server/database/connection');
 
 const app = express();
 // dotenv.config({path:'config.env'})
  const PORT = process.env.PORT||8080;
 
- 
-
-
-
-
 // log request
 app.use(morgan('tiny'));
 
 // mongodb connection
-// connectDB();
+connectDB();
 
 // parse request to bady-parser
 app.use(express.urlencoded({extended:true}));
