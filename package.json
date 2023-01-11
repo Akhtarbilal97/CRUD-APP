@@ -20,6 +20,9 @@
     "http": "^0.0.1-security",
     "mongoose": "^6.8.1",
     "morgan": "^1.10.0",
+    "swagger-jsdoc": "^6.2.7",
+    "swagger-json": "^2.0.0",
+    "swagger-ui-express": "^4.6.0",
     "to-regex-range": "^5.0.1"
   },
   "devDependencies": {
